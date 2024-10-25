@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="write" >
+    <button>submit</button>
+    <script>
+        let search = document.querySelector('input');
+        let btn = document.querySelector('button');
+        function check(){
+            alert(search.value)
+        }
+        btn.addEventListener('click',()=>{
+            check()
+        }); 
+        search.addEventListener('keyup',(e)=>{
+            if (e.keyCode === 13){
+                check();
+            }
+        })
+    </script>
+</body>
+</html>
